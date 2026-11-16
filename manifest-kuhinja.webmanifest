@@ -1,0 +1,26 @@
+{
+  "id": "/ortak-zemun/kuhinja",
+  "name": "Ortak · Kuhinja",
+  "short_name": "Kuhinja",
+  "description": "Portal za kuhinju — Caffe Pizzeria Ortak",
+  "lang": "sr",
+  "start_url": "/ortak-zemun/kuhinja",
+  "scope": "/ortak-zemun/kuhinja",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#191A23",
+  "background_color": "#191A23",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

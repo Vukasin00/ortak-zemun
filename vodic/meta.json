@@ -1,0 +1,47 @@
+{
+  "info": {
+    "id": "ortak",
+    "guideKey": "or-guide-done",
+    "storageKey": "ortak-zemun",
+    "fulfillments": [
+      "delivery",
+      "pickup"
+    ],
+    "sizes": 3,
+    "name": "Caffe Pizzeria Ortak",
+    "address": "Prvomajska 35d, Zemun",
+    "phone": "064 2000 366",
+    "hours": "Svaki dan 08:00 – 24:00 · dostava 08:00 – 23:00",
+    "instagram": "https://www.instagram.com/pizzeria_ortak/",
+    "logo": "logo.png",
+    "deliveryFee": 0,
+    "cardPayment": [],
+    "locations": 0,
+    "categories": 8,
+    "menu": "static",
+    "menuItems": 130,
+    "closedToday": false,
+    "soldOutToday": [],
+    "orders": "local",
+    "tenantPath": "ortak",
+    "emulator": false
+  },
+  "style": {
+    "bg": "#F7F7F7",
+    "card": "#FFFFFF",
+    "inset": "#EDEDEF",
+    "line": "#E1E1E4",
+    "primary": "#008238",
+    "onPrimary": "#FFFFFF",
+    "dark": "#191A23",
+    "dark2": "#20212C",
+    "cta": "#E03030",
+    "ink": "#20212C",
+    "ink2": "#585764",
+    "font": "\"Mali\", \"Comic Sans MS\", \"Segoe Print\", sans-serif",
+    "tracking": "0.01em",
+    "case": "uppercase",
+    "weight": "600",
+    "scale": "0.8"
+  }
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="sr" data-tenant="ortak">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Portal za kuhinju — Ortak" />
+    <meta name="theme-color" content="#191A23" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kuhinja" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/ortak-zemun/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/ortak-zemun/apple-touch-icon.png" />
+    <!-- The kitchen's own manifest, in the HTML from the start: iOS Safari reads the manifest link when the page loads and
+         ignores a later change by the app, so a dynamically swapped link made "Add to Home Screen" install the customer app. -->
+    <link rel="manifest" href="/ortak-zemun/manifest-kuhinja.webmanifest" />
+    <title>Kuhinja · Ortak</title>
+    <style>
+      /* Splash painted before the JS bundle arrives: the kitchen is dark, so the splash is too. */
+      html, body, #root { height: 100%; margin: 0; }
+      body { background: #191A23; }
+      .splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--color-cream-100, #fff); }
+      .splash-name { font-family: var(--font-display, sans-serif); font-weight: var(--display-weight, 400); font-size: calc(40px * var(--display-scale, 1)); letter-spacing: var(--display-tracking, 0.02em); text-transform: var(--display-case, none); }
+      .splash-sub { font: 600 12px -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+    </style>
+  <style id="tenant-theme">
+ html[data-tenant="ortak"] {
+  --color-cream-50: #FFFFFF;
+  --color-cream-100: #F7F7F7;
+  --color-cream-200: #EDEDEF;
+  --color-cream-300: #E1E1E4;
+  --color-cream-400: #CACCCF;
+  --color-azure-100: #E3F2E8;
+  --color-azure-200: #007D35;
+  --color-azure-300: #008238;
+  --color-azure-400: #006B2C;
+  --color-on-primary: #FFFFFF;
+  --color-forest-950: #111218;
+  --color-forest-900: #191A23;
+  --color-forest-800: #20212C;
+  --color-forest-700: #2A2B38;
+  --color-forest-600: #474655;
+  --color-forest-500: #585764;
+  --color-forest-400: #7A7986;
+  --color-flame-100: #FDE6E4;
+  --color-flame-200: #F9B9B4;
+  --color-flame-500: #E03030;
+  --color-flame-600: #C62828;
+  --color-flame-700: #B72C2C;
+  --color-tomato-500: #B3261E;
+  --color-tomato-100: #FBE1DE;
+  --color-basil-500: #2A7F3E;
+  --color-basil-100: #E2F1E5;
+  --color-notice-500: #D99A1E;
+  --color-notice-100: #FBEFD2;
+  --color-ink: #20212C;
+  --color-ink-2: #585764;
+  --color-ink-3: #7A7986;
+  --font-display: "Mali", "Comic Sans MS", "Segoe Print", sans-serif;
+  --display-scale: 0.8;
+  --display-tracking: 0.01em;
+  --display-case: uppercase;
+  --display-weight: 600;
+  --motif: url(/ortak-zemun/motif.svg) center top / 160px auto repeat, linear-gradient(#F2F5F1, #F2F5F1);
+  --glass-bg: rgba(247, 247, 247, 0.82);
+ }
+/* self-hosted display font (latin + latin-ext for Serbian diacritics); /ortak-zemun/ is filled in by vite.config.ts */
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/ortak-zemun/fonts/mali-600-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/ortak-zemun/fonts/mali-600-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    
+    <script type="module" crossorigin src="/ortak-zemun/assets/main-D9A_7g5-.js"></script>
+    <link rel="stylesheet" crossorigin href="/ortak-zemun/assets/main-CQ3Fmxgd.css"><script id="vite-plugin-pwa:register-sw" src="/ortak-zemun/registerSW.js"></script></head>
+  <body>
+    <div id="root"><div class="splash"><span class="splash-name">KUHINJA</span><span class="splash-sub">Ortak · Učitavanje</span></div></div>
+  </body>
+</html>

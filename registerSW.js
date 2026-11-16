@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/ortak-zemun/sw.js', { scope: '/ortak-zemun/' })})}
